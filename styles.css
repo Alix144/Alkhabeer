@@ -386,8 +386,9 @@
 
             h2{
                 font-size: 1.5rem;
-                margin-bottom: 30px;
+                margin-bottom: 15px;
             }
+            
 
             header .container .lang-btn{
                 display: none;
@@ -419,6 +420,10 @@
             #contact{
                 margin-top: 20px;
                 padding-bottom: 30px;
+            }
+
+            .contact-item {
+                padding: 20px;
             }
 
             footer p{
