@@ -50,7 +50,7 @@
                     <li><a href="#contact" data-i18n="nav-contact">Contact Us</a></li>
                 </ul>
             </nav>
-            <button class="lang-btn" id="lang-toggle" data-i18n="lang-btn-text">العربية</button>
+            <button class="lang-btn" id="lang-toggle2" data-i18n="lang-btn-text">العربية</button>
             </div>
             <p>© 2025 ALKHABEER COMPANY. All Rights Reserved.</p>
             <div class="close-sidebar" id="close-btn">
@@ -61,7 +61,7 @@
         <main>
             <section id="home" class="hero">
                 <div class="hero-content">
-                <h1 data-i18n="slogan">The Art of Color, The Science of Adhesion</h1>
+                <h1 data-i18n="slogan">For every project, the perfect finish!</h1>
                 <p data-i18n="hero-text">Your authorized distributor of Hempel paints and a complete solution for all your painting needs.</p>
                 </div>
             </section>
@@ -97,7 +97,8 @@
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <h3 data-i18n="contact-phone-h3">Phone</h3>
-                        <p><a href="tel:+96512345678" data-i18n="contact-phone">+965 99414311</a></p>
+                        
+                        <p><a href="tel:+96512345678"  >965-99414311</a></p>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-location-dot"></i>
@@ -109,13 +110,14 @@
         </section>
         </main>
             <footer>
-        <p>© 2023 ALKHABEER COMPANY. All Rights Reserved.</p>
+        <p>© 2025 ALKHABEER COMPANY. All Rights Reserved.</p>
     </footer>
 
     <script>
 // Inside your existing script tag
 document.addEventListener("DOMContentLoaded", function() {
     const langToggleBtn = document.getElementById('lang-toggle');
+    const langToggleBtn2 = document.getElementById('lang-toggle2');
     const menuToggleBtn = document.getElementById('hamburger-btn');
     const mainNav = document.getElementById('main-nav');
     const mobileSidebar = document.getElementById('mobile-sidebar'); // Get the sidebar element
@@ -129,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     'logo': 'ALKHABEER COMPANY',
                     'nav-about': 'About Us',
                     'nav-contact': 'Contact Us',
-                    'slogan': 'The Art of Color, The Science of Adhesion',
+                    'slogan': 'For every project, the perfect finish!',
                     'hero-text': 'Your authorized distributor of Hempel paints and a complete solution for all your painting needs.',
                     'about-title': 'About Us',
                     'about-text': 'ALKHABEER COMPANY is a leading retail store specializing in high-quality paints, varnishes, and adhesives. We are the authorized distributor of Hempel paints with 20 years of experience in the Kuwaiti market, providing a wide range of products for all your home and professional projects. Our expert team is committed to helping you find the perfect solution, from vibrant colors to durable finishes.',
@@ -137,18 +139,18 @@ document.addEventListener("DOMContentLoaded", function() {
                     'cta-text': 'Come and experience the quality of our products and get expert advice for your next project. We look forward to seeing you!',
                     'contact-title': 'Contact Us',
                     'contact-email-h3': 'Email',
-                    'contact-email': 'info@alkhabeercompany.com',
+                    'contact-email': 'billal.nassar@asktheexperties.com',
                     'contact-phone-h3': 'Phone',
-                    'contact-phone': '+965 1234 5678',
+                    'contact-phone': '+965-99414311',
                     'contact-location-h3': 'Location',
-                    'contact-location': 'Street 123, Block 4, Kuwait City',
+                    'contact-location': 'The One Mall, Shop No. 4, Back of Avenues Mall, Al Ray, Kuwait',
                     'lang-btn-text': 'العربية'
                 },
                 'ar': {
                     'logo': 'شركة الخبير',
                     'nav-about': 'من نحن',
                     'nav-contact': 'اتصل بنا',
-                    'slogan': 'فن الألوان، وعلم الالتصاق',
+                    'slogan': 'لكل مشروع، اللمسة المثالية',
                     'hero-text': 'موزعون معتمدون لدهانات همبل، والحل الشامل لجميع احتياجاتكم من الدهانات.',
                     'about-title': 'من نحن',
                     'about-text': 'شركة الخبير هي متجر رائد متخصص في بيع الدهانات، الورنيشات، والمواد اللاصقة عالية الجودة. نحن الموزع المعتمد لدهانات همبل ولدينا 20 عامًا من الخبرة في السوق الكويتي، ونقدم مجموعة واسعة من المنتجات لجميع مشاريعكم المنزلية والمهنية. فريقنا من الخبراء ملتزم بمساعدتكم في العثور على الحل الأمثل، من الألوان النابضة بالحياة إلى التشطيبات المتينة.',
@@ -156,11 +158,11 @@ document.addEventListener("DOMContentLoaded", function() {
                     'cta-text': 'تعالوا واختبروا جودة منتجاتنا واحصلوا على نصائح الخبراء لمشروعكم القادم. نتطلع لرؤيتكم!',
                     'contact-title': 'اتصل بنا',
                     'contact-email-h3': 'البريد الإلكتروني',
-                    'contact-email': 'info@alkhabeercompany.com',
+                    'contact-email': 'billal.nassar@asktheexperties.com',
                     'contact-phone-h3': 'الهاتف',
-                    'contact-phone': '+965 1234 5678',
+                    'contact-phone': '+965-99414311',
                     'contact-location-h3': 'الموقع',
-                    'contact-location': 'شارع 123، قطعة 4، مدينة الكويت',
+                    'contact-location': 'ذا ون مول، محل رقم 4، خلف مجمع الأفنيوز، الري، الكويت',
                     'lang-btn-text': 'English'
                 }
             };
@@ -169,6 +171,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.documentElement.lang = lang;
                 body.classList.toggle('ar', lang === 'ar');
                 langToggleBtn.textContent = translations[lang === 'en' ? 'ar' : 'en']['lang-btn-text'];
+                langToggleBtn2.textContent = translations[lang === 'en' ? 'ar' : 'en']['lang-btn-text'];
 
                 elements.forEach(el => {
                     const key = el.getAttribute('data-i18n');
@@ -183,6 +186,13 @@ document.addEventListener("DOMContentLoaded", function() {
             setLanguage(savedLang);
 
             langToggleBtn.addEventListener('click', () => {
+                const currentLang = document.documentElement.lang;
+                const newLang = currentLang === 'en' ? 'ar' : 'en';
+                setLanguage(newLang);
+                localStorage.setItem('lang', newLang);
+            });
+
+            langToggleBtn2.addEventListener('click', () => {
                 const currentLang = document.documentElement.lang;
                 const newLang = currentLang === 'en' ? 'ar' : 'en';
                 setLanguage(newLang);
