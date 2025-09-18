@@ -25,7 +25,7 @@
             color: var(--text-color);
             background-color: var(--light-color);
             direction: ltr; /* Default for English */
-            
+            position: relative;
         }
         
         body.ar {
@@ -41,6 +41,27 @@
             font-size: 2rem;
             margin-bottom: 30px;
             color: var(--primary-color);
+        }
+
+        .floating-icon {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            z-index: 30;
+        }
+
+        .floating-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
         }
 
         .section-header::after {
@@ -357,6 +378,7 @@
         .contact-item p a {
             color: var(--text-color);
             text-decoration: none;
+            white-space: normal;
         }
         
         .contact-item p a:hover {
@@ -394,6 +416,10 @@
                 margin-bottom: 15px;
             }
             
+            .floating-icon {
+                bottom: 20px;
+                right: 20px;
+            }
 
             header .container .lang-btn{
                 display: none;
